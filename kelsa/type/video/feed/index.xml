@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Video &#8211; Kelsa</title>
+	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
+	<link>./../../../index.html</link>
+	<description>CRM</description>
+	<lastBuildDate>Mon, 28 Aug 2017 08:00:16 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.5</generator>
+	<item>
+		<title>Vimeo &#8211; Cras vitae ex eleifend</title>
+		<link>./../../../vimeo-cras-vitae-ex-eleifend-2/index.html</link>
+					<comments>./../../../vimeo-cras-vitae-ex-eleifend-2/index.html#respond</comments>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Thu, 18 Jun 2015 06:31:19 +0000</pubDate>
+				<category><![CDATA[funding]]></category>
+		<category><![CDATA[mentor]]></category>
+		<category><![CDATA[video]]></category>
+		<guid isPermaLink="false">http://wedesignthemes.com/themes/testdata/?p=108</guid>
+
+					<description><![CDATA[Vivamus urna erat, gravida nec mauris quis, porttitor dignissim ipsum. Maecenas a auctor magna. Nunc ut nisi in sem vestibulum luctus et sit amet nulla. Nulla quam elit, vestibulum sed sodales ac, bibendum a lacus. Cras volutpat mi eget aliquam tempor. Quisque nulla nulla, sollicitudin a ante vitae, elementum laoreet diam. Donec finibus ante in [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Vivamus urna erat, gravida nec mauris quis, porttitor dignissim ipsum. Maecenas a auctor magna. Nunc ut nisi in sem vestibulum luctus et sit amet nulla. Nulla quam elit, vestibulum sed sodales ac, bibendum a lacus. Cras volutpat mi eget aliquam tempor. Quisque nulla nulla, sollicitudin a ante vitae, elementum laoreet diam. Donec finibus ante in aliquam volutpat. Maecenas quis viverra diam. Nulla facilisi. In dictum nunc ac sapien dictum accumsan. Maecenas tempus maximus eros, sit amet imperdiet nisi. Fusce consequat, elit non pellentesque consectetur, eros nisl congue velit, vel tincidunt nibh velit et urna. Phasellus nec nibh ac velit bibendum tempus.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>./../../../vimeo-cras-vitae-ex-eleifend-2/feed/index.html</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Youtube &#8211; Maecenas finibus eros ut</title>
+		<link>./../../../youtube-maecenas-finibus-eros-ut/index.html</link>
+					<comments>./../../../youtube-maecenas-finibus-eros-ut/index.html#respond</comments>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Thu, 18 Jun 2015 06:30:55 +0000</pubDate>
+				<category><![CDATA[bonds]]></category>
+		<category><![CDATA[youtube]]></category>
+		<guid isPermaLink="false">http://wedesignthemes.com/themes/testdata/?p=110</guid>
+
+					<description><![CDATA[Aliquam imperdiet turpis nec lacus euismod egestas. Nullam ultricies tellus a erat rutrum porttitor. Ut semper dignissim turpis, at scelerisque turpis pharetra at. Vivamus porta blandit arcu in dictum. Duis gravida magna nisl, ut sollicitudin leo lobortis in. Suspendisse tempor ligula massa, eu finibus mauris gravida tristique. Sed iaculis ultrices diam sed finibus. Etiam non [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Aliquam imperdiet turpis nec lacus euismod egestas. Nullam ultricies tellus a erat rutrum porttitor. Ut semper dignissim turpis, at scelerisque turpis pharetra at. Vivamus porta blandit arcu in dictum. Duis gravida magna nisl, ut sollicitudin leo lobortis in. Suspendisse tempor ligula massa, eu finibus mauris gravida tristique. Sed iaculis ultrices diam sed finibus. Etiam non lorem est. Praesent rhoncus eget nunc non dignissim. Aliquam vehicula vestibulum elit. Integer ornare, leo sed porttitor posuere, enim elit ultricies ipsum, a mollis metus diam mattis justo. Aenean condimentum hendrerit justo.</p>
+<p>Fusce fermentum quis justo ut rutrum. Integer ligula felis, egestas eget fermentum euismod, finibus non mauris. Vivamus facilisis, dui eu tempus finibus, lacus felis congue mauris, nec scelerisque augue turpis sed nunc. Proin nec tempus mauris, eu blandit mi.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>./../../../youtube-maecenas-finibus-eros-ut/feed/index.html</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>
