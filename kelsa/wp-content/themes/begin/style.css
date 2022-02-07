@@ -1,0 +1,49 @@
+/*
+Theme Name: Begin
+Theme URI:http://dtbegin.wpengine.com/landing/
+Author: the DesignThemes team
+Author URI: https://wedesignthemes.com/
+Description: Begin is the gateway to your new startup business. With pre-built pages you can create website within few minutes.Begin offers you easy way to customize your site without having to depend on developers. Everything is simple to configure-just drag and drop interface using which you can easily configure your web pages like a professional.
+Version: 2.3
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
+Text Domain: begin
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+@media only screen and  (max-width: 479px)
+.ult-spacer {
+    height: 20px  !important;;
+}
+
+@media only screen and  (max-width: 767px)
+.ult-spacer {
+    height: 85px  !important;;
+}
+
+@media only screen and (max-width: 767px)
+{
+#logo img {
+    margin: 0 auto;
+    height: 30px  !important;
+}
+	
+	#logo a {
+    height: 35px!important;
+}
+	
+	#logo {
+    padding:10px 0 5px!important;
+}
+}
+
+.main-title-section{
+	display:none!important;
+}
+
+.main-title-section-wrapper {
+    margin: 0px 0px 1px!important;
+    padding: 10px 0px 10px!important;
+}
