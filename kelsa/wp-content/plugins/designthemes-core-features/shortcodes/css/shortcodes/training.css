@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* Table of Content
+==================================================
+	1.0 - Fitness Training
+	2.0 - Skin Colors*/
+ 	
+
+	/*--------------------------------------------------------------
+	1.0 - Fitness Training
+	--------------------------------------------------------------*/
+	
+	.dt-sc-training { float:left; clear:both; width:100%; margin:0px; padding:0px; overflow:hidden; }
+	.dt-sc-training-thumb { float:left; width:45%; margin:0px; padding:0px; position:relative; }
+	.dt-sc-training-thumb-overlay { position:absolute; width:100%; height:100%; left:0px; top:0px; }
+	.dt-sc-training-thumb-overlay a { position:absolute; left:0px; right:0px; top:0px; bottom:0px; margin:auto; width:90px; height:17px; }
+	.dt-sc-training-details { float:left; width:55%; margin:0px; padding:30px 30px 31px; position:relative; }
+	.dt-sc-training-details h6 { text-transform:uppercase; margin-bottom:13px; }
+	.dt-sc-training-details ul { float:left; margin:0px; padding:0px; }
+	.dt-sc-training-details ul li { float:left; display:block; margin:2px 0px; padding:0px; clear:both; }
+	.dt-sc-training-details ul li span { margin:0px 5px 0px 0px; }
+	.dt-sc-training-details p { clear:both; margin:14px 0px 0px; display:inline-block; }
+	.dt-sc-training-details-overlay { position:absolute; left:0px; top:0px; width:101%; height:100%; margin:0px; padding:30px; }
+	.dt-sc-training-details-overlay h6 { font-size:30px; font-weight:bold; line-height:30px; margin:45px 0px 0px; display:inline-block; }
+	.dt-sc-training-details-overlay .price { font-size:50px; display:inline-block; margin:25px 0px 0px; }
+	.dt-sc-training-details-overlay .price sup, .dt-sc-training-details-overlay .price sub { font-size:16px; text-transform:uppercase; } 
+	.dt-sc-training-details-overlay .price sup { top:-26px; }
+	
+	.dt-sc-training-details-overlay, .dt-sc-training-thumb-overlay { -ms-transform: translatey(100%); -webkit-transform: translatey(100%); transform: translatey(100%); -webkit-backface-visibility: hidden; backface-visibility: hidden; }
+	.dt-sc-training:hover .dt-sc-training-details-overlay, .dt-sc-training:hover .dt-sc-training-thumb-overlay {  -ms-transform: translatey(0); -webkit-transform: translatey(0); transform: translatey(0); }
+	
+	.dt-sc-training-thumb-overlay { -ms-transform: translatey(-100%); -webkit-transform: translatey(-100%); transform: translatey(-100%); }  

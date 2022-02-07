@@ -1,0 +1,183 @@
+@charset "utf-8";
+/* Table of Content
+==================================================
+	1.0 - Transition
+	1.1 - Triangle
+	1.2 - Default Colors
+	1.3 - Responsive
+	1.4 - Skin Colors*/
+	
+	
+	
+	/*--------------------------------------------------------------
+	1.0 - Transition
+	--------------------------------------------------------------*/
+	.dt-sc-triangle-wrapper .dt-sc-triangle-content:before { -webkit-transition:all 0.3s linear; -moz-transition:all 0.3s linear; -o-transition:all 0.3s linear; -ms-transition:all 0.3s linear; transition:all 0.3s linear; }
+
+	
+	
+	/*--------------------------------------------------------------
+	1.1 - Triangle
+	--------------------------------------------------------------*/
+	
+	.dt-sc-triangle-wrapper { clear: both; float:left; margin: 0; padding: 130px 0 120px; width:100%; }
+	.dt-sc-triangle-wrapper.alter { padding: 0; margin-bottom:-120px; }
+
+	.dt-sc-triangle-img { -webkit-transform:rotate(45deg); -moz-transform:rotate(45deg); -ms-transform:rotate(45deg); -o-transform:rotate(45deg); transform:rotate(45deg); display:inline-block; -webkit-transition:-webkit-transform 300ms ease-out; -moz-transition:-moz-transform 300ms ease-out; transition:transform 300ms ease-out; position:relative;  z-index:1; }
+	.alter .dt-sc-triangle-img { width:80px; -webkit-transform:rotate(225deg); -moz-transform:rotate(225deg); -ms-transform:rotate(225deg); -o-transform:rotate(225deg); transform:rotate(225deg); }
+	
+	.alter .dt-sc-triangle-img { position: relative; left: 300px; top: -128px; }
+	
+	
+	.alter .dt-sc-triangle-img .dt-sc-triangle-img-crop a { -webkit-transform:skew(-10deg, -10deg) rotate(-225deg); -moz-transform:skew(-10deg, -10deg) rotate(-225deg); -ms-transform:skew(-10deg, -10deg) rotate(-225deg);  -o-transform:skew(-10deg, -10deg) rotate(-225deg); transform:skew(-10deg, -10deg) rotate(-225deg); }
+	.dt-sc-triangle-img-crop { position:relative; width:395px; height:395px; margin:0; display:block; overflow:hidden; -webkit-transform:skew(10deg, 10deg); -moz-transform:skew(10deg, 10deg); -ms-transform:skew(10deg, 10deg);  -o-transform:skew(10deg, 10deg); transform:skew(10deg, 10deg); }
+	
+	.dt-sc-triangle-img-crop a { width:370px; height:370px; overflow:hidden; position:absolute; left:-45%; margin-top:36px; margin-left:36px; top:-45%; -webkit-transform:skew(-10deg, -10deg) rotate(-45deg); -moz-transform:skew(-10deg, -10deg) rotate(-45deg); -ms-transform:skew(-10deg, -10deg) rotate(-45deg); -o-transform:skew(-10deg, -10deg) rotate(-45deg); transform:skew(-10deg, -10deg) rotate(-45deg); }
+	.dt-sc-triangle-img-crop a:hover { opacity:1; }
+	.dt-sc-triangle-img-crop a img { position:relative; top:20%; z-index:1; }
+	
+	.dt-sc-triangle-content { margin-top:-323px; padding: 65px 0 0 0; position:relative; left: 52px; text-align:center; width: 350px; }
+	.dt-sc-triangle-content:before { content:""; position:absolute; left: 0; top: 0; width: 0; height: 0; border-left:175px solid transparent; border-right:175px solid transparent; border-top:250px solid; }
+	
+	
+	.dt-sc-triangle-wrapper.alter .dt-sc-triangle-content { margin-top: 0; padding:130px 0 0 0; left: 26px; }
+	.dt-sc-triangle-wrapper.alter .dt-sc-triangle-content:before { border-top:0px; border-bottom:250px solid; }	
+	
+	.alter .dt-sc-triangle-img .dt-sc-triangle-img-crop a img { top:0; }	
+	
+	
+	.dt-sc-triangle-content h4, .dt-sc-triangle-content h5 { position:relative; z-index:1; color:#ffffff; }
+	.dt-sc-triangle-content h4 { margin-bottom: 10px; font-size: 18px; }
+	.dt-sc-triangle-content h5 { font-size: 12px; font-style:italic; margin-bottom: 0; text-align: center; }
+	
+	
+	
+	/*--------------------------------------------------------------
+	1.2 - Default Colors
+	--------------------------------------------------------------*/
+	.dt-sc-dark-bg .dt-sc-triangle-content h5 { color:rgba(255, 255, 255, 0.5); }
+	
+	.dt-sc-triangle-content:before { border-top-color:#040506; }
+	.dt-sc-triangle-wrapper.alter .dt-sc-triangle-content:before { border-bottom-color:#040506; }
+		
+		
+		
+	/*--------------------------------------------------------------
+	1.3 - Responsive
+	--------------------------------------------------------------*/
+	
+	/* Note: Design for a width of 960px */	
+    @media only screen and (min-width:992px) and (max-width:1199px) {
+		
+		/*----*****---- << Content Shortcodes >> ----*****----*/
+		.dt-sc-triangle-img-crop { height: 295px; width: 295px; }
+		.dt-sc-triangle-img-crop a { height: 270px; margin-top: 32px; margin-left: 32px; width: 270px; }
+		
+		.dt-sc-triangle-content { margin-top: -245px; padding: 60px 0 0; left: 39px; width: 260px; }
+		.dt-sc-triangle-wrapper.alter .dt-sc-triangle-content { padding: 110px 0 0 0; left: 19px; }
+		
+		.dt-sc-triangle-content:before { border-left-width: 130px; border-right-width: 130px; border-top-width: 200px; }
+		.dt-sc-triangle-wrapper.alter .dt-sc-triangle-content:before { border-bottom-width: 200px; }
+		
+		.alter .dt-sc-triangle-img { left: 205px; top: -105px; }
+		
+		
+		.dt-sc-triangle-content h4 { font-size: 13px; }
+		.dt-sc-triangle-content h5 { font-size: 10px; }
+	
+	}
+	
+	
+	 /* Note: Design for a width of 768px */
+    @media only screen and (min-width:768px) and (max-width:991px) {
+		
+		/*----*****---- << Content Shortcodes >> ----*****----*/
+		.dt-sc-triangle-wrapper.alter { padding: 55px 0 0; }
+		
+		.dt-sc-triangle-img-crop { height: 230px; width: 230px; }
+		.dt-sc-triangle-img-crop a { height: 215px; margin-top: 16px; margin-left: 16px; width: 215px; }
+		
+		.dt-sc-triangle-content { margin-top: -195px; padding: 30px 0 0 0; left: 16px; width: 200px; }
+		.dt-sc-triangle-wrapper.alter .dt-sc-triangle-content { padding: 75px 0 0 0; left: 13px; }
+
+		.dt-sc-triangle-content:before { border-left-width: 100px; border-right-width: 100px; border-top-width: 140px; }
+		.dt-sc-triangle-wrapper.alter .dt-sc-triangle-content:before { border-bottom-width: 140px; }
+		
+		.dt-sc-triangle-wrapper.alter .dt-sc-triangle-img { left: 122px; top: -100px; }
+		
+		.dt-sc-triangle-content h4 { font-size: 12px; margin-bottom: 0; font-weight:normal; }
+		.dt-sc-triangle-content h5 { font-size: 10px; }
+	
+	}
+	
+	/*----*****---- << Mobile (Landscape) >> ----*****----*/	
+	
+	/* Common Styles for the devices below 767px width */
+	@media only screen and (max-width: 767px) {
+	
+		.dt-sc-triangle-wrapper.alter { padding: 50px 0 0; }
+		
+	}
+	
+	
+	/*----*****---- << Mobile (Landscape) >> ----*****----*/
+    /* Note: Design for a width of 480px */
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+		
+		/*----*****---- << Content Shortcodes >> ----*****----*/
+		.dt-sc-triangle-img-crop a { margin-left: 20px; margin-top: 20px; }		
+		.dt-sc-triangle-content { margin-top: -340px; padding: 80px 0 0 20px; left: 0; }
+		.dt-sc-triangle-content:before { border-left-width: 160px; border-right-width: 160px; border-top-width: 225px; left: 60px; }
+		.dt-sc-triangle-content h4, .dt-sc-triangle-content h5 { margin-left: 60px; }
+		.dt-sc-triangle-content h4 { font-size: 14px; }
+		
+		.dt-sc-triangle-wrapper.alter .dt-sc-triangle-content:before { border-bottom-width: 225px; right: 46px; }
+		.dt-sc-triangle-wrapper.alter .dt-sc-triangle-content { padding: 130px 0 0 0; left: 10px; top: -10px; }	
+		
+		.alter .dt-sc-triangle-img { left: 320px; top: -170px; }
+		
+	}
+	
+	/* Common Styles for the devices below 479px width */
+    @media only screen and (max-width: 479px) {		
+		
+		/*----*****---- << Content Shortcodes >> ----*****----*/
+		.dt-sc-triangle-img-crop { height: 275px; width: 275px; }
+		.dt-sc-triangle-img-crop a { height: 250px; margin-top: 20px; margin-left: 20px; width: 250px; }
+		
+		.dt-sc-triangle-content { margin-top: -240px; padding: 50px 0 0 0; left: 44px; width: 220px; }
+		.dt-sc-triangle-wrapper.alter .dt-sc-triangle-content { padding: 105px 0 0; left: 22px; }
+		
+		.dt-sc-triangle-content:before { border-left-width: 110px; border-right-width: 110px; border-top-width: 180px; }
+		.dt-sc-triangle-wrapper.alter .dt-sc-triangle-content:before { border-top: 0; border-bottom-width: 180px; }
+		
+		.dt-sc-triangle-wrapper.alter .dt-sc-triangle-img { left: 178px; top: -125px; }
+		
+		.dt-sc-triangle-content h4 { font-size: 12px; }
+		.dt-sc-triangle-content h5 { font-size: 10px; }
+	
+	}
+	
+	
+	
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 319px) {		
+		
+		/*----*****---- << Content Shortcodes >> ----*****----*/
+		.dt-sc-triangle-wrapper { padding: 75px 0 60px; }
+		
+		.dt-sc-triangle-img-crop { height: 205px; width: 205px; }
+		.dt-sc-triangle-img-crop a { height: 190px; margin-top: 15px; margin-left: 15px; width: 190px; }
+		
+		.dt-sc-triangle-content { margin-top: -180px; padding: 40px 0 0; left: 32px; width: 170px; }
+		.dt-sc-triangle-wrapper.alter .dt-sc-triangle-content { padding: 75px 0 0; left: 13px; }
+		
+		.dt-sc-triangle-content:before { border-left-width: 85px; border-right-width: 85px; border-top-width: 135px; }
+		.dt-sc-triangle-wrapper.alter .dt-sc-triangle-content:before { border-bottom-width: 135px; }
+		
+		.dt-sc-triangle-wrapper.alter .dt-sc-triangle-img { left: 120px; top: -95px; }
+		
+		.dt-sc-triangle-content h4 { font-size: 9px; }
+		.dt-sc-triangle-content h5 { font-size: 8px; }
+		
+	} 

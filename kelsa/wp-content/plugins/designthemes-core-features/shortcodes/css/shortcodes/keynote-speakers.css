@@ -1,0 +1,80 @@
+@charset "utf-8";
+/* Table of Content
+==================================================
+	1.0 - Transition
+	2.0 - Event Keynote Speakers
+	3.0 - Responsive
+	4.0 - Skin Colors*/
+ 	
+
+	/*--------------------------------------------------------------
+	1.0 - Transition
+	--------------------------------------------------------------*/
+
+.dt-sc-keynote-speakers .dt-sc-speakers-thumb .dt-sc-speakers-thumb-overlay, .dt-sc-keynote-speakers, .dt-sc-keynote-speakers .dt-sc-speakers-details:before { -webkit-transition:all 0.3s linear; -moz-transition:all 0.3s linear; -o-transition:all 0.3s linear; -ms-transition:all 0.3s linear; transition:all 0.3s linear; }		
+	
+	
+	/*--------------------------------------------------------------
+	2.0 - Event Keynote Speakers
+	--------------------------------------------------------------*/
+	
+	.dt-sc-keynote-speakers { float:left; clear:both; width:100%; border-left:1px solid; border-right:1px solid; }
+	.dt-sc-keynote-speakers .dt-sc-speakers-thumb { border-right:1px solid; position:relative; }
+	.dt-sc-keynote-speakers .dt-sc-speakers-thumb-holder { position:relative; }
+	.dt-sc-keynote-speakers .dt-sc-speakers-thumb, .dt-sc-keynote-speakers .dt-sc-speakers-details { width:50%; float:left; }
+	.dt-sc-keynote-speakers .dt-sc-speakers-details { text-align:left; padding:0px 25px 0px; position:relative; }
+	.dt-sc-keynote-speakers .dt-sc-speakers-details h4, .dt-sc-keynote-speakers .dt-sc-speakers-thumb h4 { letter-spacing:1px; font-size:16px; text-transform:uppercase; margin-bottom:0px; position:relative; }
+	.dt-sc-keynote-speakers .dt-sc-speakers-thumb h5 { font-weight:normal; font-size:13px; letter-spacing:0px; display:inline-block; padding:0px; }
+	.dt-sc-keynote-speakers .dt-sc-speakers-details p { margin-top:10px; }
+	.dt-sc-keynote-speakers .dt-sc-speakers-details:before { content:""; position:absolute; top:35px; left:-15px; border-top:15px solid transparent; border-bottom:15px solid transparent; border-right:15px solid; z-index:1; }
+	
+	.dt-sc-keynote-speakers .dt-sc-speakers-thumb h4, .dt-sc-keynote-speakers .dt-sc-speakers-thumb h5 { padding:0px 20px; float:left; width:100%; }
+	.dt-sc-keynote-speakers .dt-sc-speakers-thumb h4 { padding-top:25px; margin-bottom:5px; }
+	.dt-sc-keynote-speakers .dt-sc-speakers-thumb h5 { padding-bottom:25px; margin:0px; }
+	
+	.dt-sc-keynote-speakers .dt-sc-speakers-details h4 { padding:30px 0px 10px; }
+	.dt-sc-keynote-speakers .dt-sc-speakers-details h4:before { content:""; position:absolute; width:55px; height:1px; left:0px; bottom:0px; }
+	
+	.dt-sc-keynote-speakers .dt-sc-speakers-thumb .dt-sc-speakers-thumb-overlay { position:absolute; left:0px; top:0px; width:100%; height:100%; opacity:0; }
+	.dt-sc-keynote-speakers:hover .dt-sc-speakers-thumb .dt-sc-speakers-thumb-overlay { opacity:1; }
+	.dt-sc-keynote-speakers:hover .dt-sc-speakers-thumb { background:#f1efea; }
+	
+	.dt-sc-keynote-speakers .dt-sc-speakers-thumb .dt-sc-team-social { position:absolute; left:0px; right:0px; top:0px; bottom:0px; text-align:center; height:35px; margin:auto; }
+	
+	.dt-sc-keynote-speakers .dt-sc-speakers-details h4, .dt-sc-keynote-speakers .dt-sc-speakers-thumb h4, .dt-sc-keynote-speakers .dt-sc-speakers-thumb h5 { font-family:'Roboto', sans-serif; }	
+	
+	.dt-sc-keynote-speakers:hover .dt-sc-speakers-details h4, .dt-sc-keynote-speakers:hover .dt-sc-speakers-details p { color:#ffffff; }	
+	.dt-sc-keynote-speakers:hover .dt-sc-speakers-details h4:before { background:#ffffff; }
+	
+	.dt-sc-keynote-speakers .dt-sc-speakers-details p { color:#222222; }
+	.dt-sc-keynote-speakers .dt-sc-speakers-thumb h5 { color:rgba(0, 0, 0, 0.4); }	
+	.dt-sc-keynote-speakers { background:#f1efea; }
+	.dt-sc-keynote-speakers .dt-sc-speakers-thumb { background:#f5f5f5; }
+	.dt-sc-keynote-speakers, .dt-sc-keynote-speakers .dt-sc-speakers-thumb { border-color:#fafaf6; }
+	.dt-sc-keynote-speakers .dt-sc-speakers-details:before { border-right-color:#f1efea; }
+	
+	.dt-sc-keynote-speakers .dt-sc-speakers-details h4:before { background:rgba(0, 0, 0, 0.1); }
+	
+	
+	
+	/*--------------------------------------------------------------
+	3.0 - Responsive
+	--------------------------------------------------------------*/
+	
+	/* Note: Design for a width of 768px */
+    @media only screen and (min-width:768px) and (max-width:991px) {
+	
+		.dt-sc-keynote-speakers .dt-sc-speakers-thumb, .dt-sc-keynote-speakers .dt-sc-speakers-details { width:100%; }
+	
+	}
+	
+	/*----*****---- << Mobile (Landscape) >> ----*****----*/	
+	
+	/* Common Styles for the devices below 767px width */
+	@media only screen and (max-width: 767px) {
+		
+		.dt-sc-keynote-speakers .dt-sc-speakers-thumb, .dt-sc-keynote-speakers .dt-sc-speakers-details { width:100%; }
+	
+	} 
+	
+	

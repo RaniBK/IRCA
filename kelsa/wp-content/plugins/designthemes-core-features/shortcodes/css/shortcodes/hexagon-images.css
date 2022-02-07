@@ -1,0 +1,224 @@
+@charset "utf-8";
+/* Table of Content
+==================================================
+	1.0 - Hexagon Images
+	2.0 - Default Colors
+	3.0 - Responsive
+	4.0 - Skin Colors*/
+
+	/*--------------------------------------------------------------
+	1.0 - Hexagon Images
+	--------------------------------------------------------------*/
+	.dt-sc-hexagon-shape { position:relative; float:left; clear:both; width:100%; margin:110px 0px; }
+	
+	.dt-sc-hexagon-image { position:relative; width:48%; padding-bottom: 55.3%; margin:0 auto; overflow:hidden; /*visibility:hidden;*/ -webkit-transform: rotate(-60deg) skewY(30deg); -ms-transform: rotate(-60deg) skewY(30deg); transform: rotate(-60deg) skewY(30deg); }
+	.dt-sc-hexagon-image span, .dt-sc-hexagon-image img { position:absolute; visibility:visible; }
+	.dt-sc-hexagon-image span { width:100%; height:100%; text-align:center; overflow:hidden; -webkit-transform: skewY(-30deg) rotate(60deg); -ms-transform: skewY(-30deg) rotate(60deg); transform: skewY(-30deg) rotate(60deg); -webkit-backface-visibility:hidden; }
+	.dt-sc-hexagon-image img { left:-100%; right:-100%; width: auto; height:100%; margin:0 auto; }
+	
+	.dt-sc-hexagon-image span:before { content:""; position:absolute; left:0px; right:0px; top:0px; margin:auto; width:100%; height:100%; z-index:1; }
+	
+	.dt-sc-hexagon-image-overlay { position:absolute; left:0px; right:0px; top:0px; bottom:0px; margin:auto; -webkit-transform: skewY(-30deg) rotate(60deg); -ms-transform: skewY(-30deg) rotate(60deg); transform: skewY(-30deg) rotate(60deg); -webkit-backface-visibility:hidden; z-index:1; text-align:center; width:100%; height:170px; }
+	
+	.dt-sc-hexagon-image-overlay h3 { font-size:25px; font-weight:300; }
+	.dt-sc-hexagon-image-overlay h2 { font-size:38px; font-weight:normal; text-transform:uppercase; position:relative; }
+	.dt-sc-hexagon-image-overlay h2:before { content:""; position:absolute; left:0px; right:0px; top:-5px; margin:auto; width:54%; height:65px; border-top:1px solid; border-bottom:1px solid; }
+	
+	.dt-sc-hexagons { float:left; width:100%; height:100%; margin:0px; padding:0px; position:absolute; top:0px; left:0px; text-align:center; }
+	.dt-sc-hexagons li { position: absolute; width: 174px; height: 100px; margin: 86.60px 0; border-left:3px solid; border-right:3px solid; display:inline-block; left:0px; right:0px; margin:auto; }
+	.dt-sc-hexagons li:before, .dt-sc-hexagons li:after, .dt-sc-hexagons li .dt-sc-hexagon-overlay:before, .dt-sc-hexagons li .dt-sc-hexagon-overlay:after { content: ""; position: absolute; z-index: 1; width:123px; height:123px;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg); -ms-transform: scaleY(0.5774) rotate(-45deg); transform: scaleY(0.5774) rotate(-45deg); background-color: inherit; left: 23.9340px; }
+	.dt-sc-hexagons li:before, .dt-sc-hexagons li .dt-sc-hexagon-overlay:before { top: -64.0660px; border-top:4.2426px solid; border-right:4.2426px solid; border-bottom:0px; border-left:0px; }
+	.dt-sc-hexagons li:after, .dt-sc-hexagons li .dt-sc-hexagon-overlay:after { bottom: -64.0660px; border-bottom:4.2426px solid; border-left:4.2426px solid; border-top:0px; border-right:0px; }
+	.dt-sc-hexagons li:hover, .dt-sc-hexagons li:hover:before, .dt-sc-hexagons li:hover:after { border-style:dashed; }
+	
+	.dt-sc-hexagons li span { position:absolute; left:0px; right:0px; top:0px; bottom:0px; margin:auto; font-size:68px; height:68px; text-align:center; z-index:9; }
+	
+	.dt-sc-hexagons li .dt-sc-hexagon-overlay { position:absolute; left:0px; right:0px; width:100%; height:100%; z-index:9; opacity:0; }
+	.dt-sc-hexagons li:hover .dt-sc-hexagon-overlay { opacity:1; }
+	.dt-sc-hexagons li .dt-sc-hexagon-overlay:before, .dt-sc-hexagons li .dt-sc-hexagon-overlay:after { border:0px; }
+	.dt-sc-hexagons li .dt-sc-hexagon-overlay p { position:absolute; left:0px; right:0px; top:0px; bottom:0px; margin:auto; z-index:9; font-size:18px; font-weight:bold; width:83%; text-align:center; height:50px; line-height:24px; }
+	
+	.dt-sc-hexagons li .dt-sc-hexagon-overlay:before { top: -62.0660px; left:27.934px; height:127px; }
+	.dt-sc-hexagons li .dt-sc-hexagon-overlay:after { bottom: -62.0660px; left:24.934px; height:127px; width:122px; }
+	
+	.dt-sc-hexagons li:first-child { top:-58px; }
+	.dt-sc-hexagons li:last-child { bottom:-58px; }
+	.dt-sc-hexagons li:nth-child(2) { top:110px; left:-48%; }
+	.dt-sc-hexagons li:nth-child(3) { top:110px; left:48%; }
+	.dt-sc-hexagons li:nth-child(4) { top:426px; left:-48%; }
+	.dt-sc-hexagons li:nth-child(5) { top:426px; left:48%; }
+	
+	.dt-sc-content-with-hexagon-shape { position:relative; width:490px; height:282.90px; margin:141.77px 0; display:inline-block; text-align:center; padding:0px 60px; }
+	.dt-sc-content-with-hexagon-shape:before, .dt-sc-content-with-hexagon-shape:after { content:""; position:absolute; width:0; border-left:245px solid transparent; border-right:245px solid transparent; left:0px; }
+	.dt-sc-content-with-hexagon-shape:before { bottom:100%; border-bottom:141.45px solid; }
+	.dt-sc-content-with-hexagon-shape:after { top:100%; width:0; border-top:141.45px solid; }
+	.dt-sc-content-with-hexagon-shape p, .dt-sc-content-with-hexagon-shape a { position:relative; z-index:9; }
+	
+	.dt-sc-content-with-hexagon-shape .hexagon-border { position:absolute; width:450px; height:259.81px; margin:144.34px 0; border-left:solid 1.8px; border-right:solid 1.8px; top:-134px; left:18px; }
+	.dt-sc-content-with-hexagon-shape .hexagon-border:before, .dt-sc-content-with-hexagon-shape .hexagon-border:after { content:""; position:absolute; z-index:1; width:318.20px; height:318.20px; -webkit-transform:scaleY(0.5774) rotate(-45deg); -ms-transform:scaleY(0.5774) rotate(-45deg); transform:scaleY(0.5774) rotate(-45deg); background-color:inherit; left:65.2233px; }
+	.dt-sc-content-with-hexagon-shape .hexagon-border:before { top:-161.0990px; border-top:solid 2.8284px; border-right:solid 2.8284px; }
+	.dt-sc-content-with-hexagon-shape .hexagon-border:after { bottom:-161.0990px; border-bottom:solid 2.8284px; border-left:solid 2.8284px; }
+	.dt-sc-content-with-hexagon-shape .dt-sc-button { font-size:20px; }	
+
+	.dt-sc-single-hexagon { width: 181px; height: 100px; margin: 86.60px 0; border-left:3px solid; border-right:3px solid; background:#ffffff; display:inline-block; position:relative; }
+	.dt-sc-single-hexagon:before, .dt-sc-single-hexagon:after, .dt-sc-single-hexagon .dt-sc-single-hexagon-overlay:before, .dt-sc-single-hexagon .dt-sc-single-hexagon-overlay:after { content: ""; position: absolute; z-index: 1; width:128px; height:128px;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg); -ms-transform: scaleY(0.5774) rotate(-45deg); transform: scaleY(0.5774) rotate(-45deg); background-color: inherit; left: 23.9340px; }
+	.dt-sc-single-hexagon:before, .dt-sc-single-hexagon .dt-sc-single-hexagon-overlay:before { top: -64.0660px; border-top:4.2426px solid; border-right:4.2426px solid; border-bottom:0px; border-left:0px; }
+	.dt-sc-single-hexagon:after, .dt-sc-single-hexagon .dt-sc-single-hexagon-overlay:after { bottom: -64.0660px; border-bottom:4.2426px solid; border-left:4.2426px solid; border-top:0px; border-right:0px; }
+	.dt-sc-single-hexagon:hover, .dt-sc-single-hexagon:hover:before, .dt-sc-single-hexagon:hover:after { border-style:dashed; }
+	
+	.dt-sc-single-hexagon span { position:absolute; left:0px; right:0px; top:0px; bottom:0px; margin:auto; font-size:68px; height:68px; text-align:center; z-index:9; color:rgba(0, 0, 0, 0.4); }
+	
+	.dt-sc-single-hexagon .dt-sc-single-hexagon-overlay { position:absolute; left:0px; right:0px; width:100%; height:100%; z-index:9; opacity:0; color:#ffffff; }
+	.dt-sc-single-hexagon:hover .dt-sc-single-hexagon-overlay { opacity:1; }
+	.dt-sc-single-hexagon .dt-sc-single-hexagon-overlay:before, .dt-sc-single-hexagon .dt-sc-single-hexagon-overlay:after { border:0px; }
+	.dt-sc-single-hexagon .dt-sc-single-hexagon-overlay p { position:absolute; left:0px; right:0px; top:0px; bottom:0px; margin:auto; z-index:9; font-size:18px; font-weight:bold; width:83%; text-align:center; height:50px; line-height:24px; }
+	
+	.dt-sc-single-hexagon .dt-sc-single-hexagon-overlay:before { top: -61.0660px; left:23.934px; height:127px; }
+	.dt-sc-single-hexagon .dt-sc-single-hexagon-overlay:after { bottom: -62.0660px; left:24.934px; height:127px; width:122px; }
+	
+	.dt-sc-single-hexagon.hexagon-left-margin { margin-left:13px; }
+	
+	.dt-sc-hexagon-title h3 { font-size:25px; font-weight:300; color:#000000; }
+	.dt-sc-hexagon-title h2 { font-size:38px; font-weight:normal; text-transform:uppercase; position:relative; }
+	.dt-sc-hexagon-title h2:before { content:""; position:absolute; left:0px; right:0px; top:-5px; margin:auto; width:25%; height:65px; border-top:1px solid #d8d8d8; border-bottom:1px solid #d8d8d8; }	
+	
+	
+	
+	/*--------------------------------------------------------------
+	2.0 - Default Colors
+	--------------------------------------------------------------*/
+	.dt-sc-hexagon-image span, .dt-sc-hexagon-image-overlay h3, .dt-sc-hexagon-image-overlay h2, .dt-sc-hexagons li .dt-sc-hexagon-overlay, .dt-sc-content-with-hexagon-shape { color:#ffffff; }	
+	.dt-sc-hexagons li span { color:rgba(0, 0, 0, 0.4); }
+	
+	.dt-sc-hexagon-image-overlay h2:before, .dt-sc-content-with-hexagon-shape .hexagon-border, .dt-sc-content-with-hexagon-shape .hexagon-border:before, .dt-sc-content-with-hexagon-shape .hexagon-border:after { border-color:#ffffff; }
+	
+	.dt-sc-hexagons li { background-color:#ffffff; }
+	
+	
+	
+	/*--------------------------------------------------------------
+	3.0 - Responsive
+	--------------------------------------------------------------*/
+	
+	/* Note: Design for a width of 960px */	
+    @media only screen and (min-width:992px) and (max-width:1199px) {
+		.dt-sc-hexagons li { height: 60px; width: 119px; }
+		.dt-sc-hexagons li::before, .dt-sc-hexagons li::after, .dt-sc-hexagons li .dt-sc-hexagon-overlay::before, .dt-sc-hexagons li .dt-sc-hexagon-overlay::after { left: 14.934px; width: 86px; height: 83px; }
+		.dt-sc-hexagons li::before, .dt-sc-hexagons li .dt-sc-hexagon-overlay::before { top: -43.066px; }
+		.dt-sc-hexagons li::after, .dt-sc-hexagons li .dt-sc-hexagon-overlay::after { bottom: -44.066px; }
+		.dt-sc-hexagons li span { font-size: 48px; height: 48px; }
+		
+		.dt-sc-hexagons li .dt-sc-hexagon-overlay::before { height: 89px; left: 17.934px; top: -42.066px; }
+		.dt-sc-hexagons li .dt-sc-hexagon-overlay::after { bottom: -41.066px; height: 83px; left: 16.934px; width: 87px; }
+		.dt-sc-hexagons li .dt-sc-hexagon-overlay p { font-size:14px; }
+		
+		.dt-sc-hexagons li:first-child { top:-34px; }
+		.dt-sc-hexagons li:nth-child(2) { left: -47%; top: 87px; }
+		.dt-sc-hexagons li:nth-child(3) { left:48%; top:88px; }
+		.dt-sc-hexagons li:nth-child(4) { left:-48%; top: 340px; }
+		.dt-sc-hexagons li:nth-child(5) { left: 47%; top: 339px; }
+		.dt-sc-hexagons li:last-child { bottom:-34px; }
+		
+		.dt-sc-hexagon-image-overlay { height:130px; }
+		.dt-sc-hexagon-image-overlay h3 { font-size:23px; }
+		.dt-sc-hexagon-image-overlay h2 { font-size:22px; }
+		.dt-sc-hexagon-image-overlay h2::before { height:37px; }
+	}
+	
+	
+	/* Note: Design for a width of 768px */
+    @media only screen and (min-width:768px) and (max-width:991px) {
+ 		
+		.dt-sc-hexagons li { width: 104px; height: 40px; }
+		.dt-sc-hexagons li::before, .dt-sc-hexagons li::after, .dt-sc-hexagons li .dt-sc-hexagon-overlay::before, .dt-sc-hexagons li .dt-sc-hexagon-overlay::after { height: 73px; width: 74px; left: 12.934px; }
+		.dt-sc-hexagons li::before, .dt-sc-hexagons li .dt-sc-hexagon-overlay::before { top: -39.066px; }
+		.dt-sc-hexagons li::after, .dt-sc-hexagons li .dt-sc-hexagon-overlay::after { bottom: -39.066px; }
+		.dt-sc-hexagons li span { font-size: 38px; height: 38px; }
+		
+		.dt-sc-hexagons li:first-child { top:-19px; }
+		.dt-sc-hexagons li:nth-child(2) { left: -47%; top: 67px; }
+		.dt-sc-hexagons li:nth-child(3) { left: 48%; top: 65px; }
+		.dt-sc-hexagons li:nth-child(4) { left: -48%; top: 277px; }
+		.dt-sc-hexagons li:nth-child(5) { left: 48%; top: 275px; }
+		.dt-sc-hexagons li:last-child { bottom: -19px; }
+		
+		.dt-sc-hexagon-image-overlay { height:112px; }
+		.dt-sc-hexagon-image-overlay h3 { font-size:17px; }
+		.dt-sc-hexagon-image-overlay h2 { font-size: 25px; }
+		.dt-sc-hexagon-image-overlay h2::before { height:39px; }
+		
+		.dt-sc-hexagons li .dt-sc-hexagon-overlay p { height:42px; font-size: 13px; line-height: 19px; }
+		.dt-sc-hexagons li .dt-sc-hexagon-overlay::before { left: 14.934px; top: -36.066px; }
+		.dt-sc-hexagons li .dt-sc-hexagon-overlay::after { bottom: -38.066px; height: 78px; left: 13.934px; width: 72px; }
+	
+	}
+	
+	/*----*****---- << Mobile (Landscape) >> ----*****----*/	
+	
+	/* Common Styles for the devices below 767px width */
+	@media only screen and (max-width: 767px) {
+ 		
+		.dt-sc-hexagon-shape { margin-top:20px; margin-bottom:0; }
+		.dt-sc-hexagons, .dt-sc-hexagons li { position: inherit; }
+		.dt-sc-hexagon-image { width: 88%; padding-bottom: 103.3%; }
+		.dt-sc-hexagon-image-overlay { height:130px; }
+		.dt-sc-hexagon-image-overlay h3 { font-size:21px; }
+		.dt-sc-hexagon-image-overlay h2 { font-size:26px; }
+		.dt-sc-hexagon-image-overlay h2::before { height:42px; }
+		
+		.dt-sc-hexagons li:first-child, .dt-sc-hexagons li:nth-child(2), .dt-sc-hexagons li:nth-child(3), .dt-sc-hexagons li:nth-child(4), .dt-sc-hexagons li:nth-child(5), .dt-sc-hexagons li:last-child { top:auto; left:30%; float:left; clear:both; bottom:auto; }
+		.dt-sc-hexagons li { margin-bottom:60px; margin-top:80px; }
+		
+		.dt-sc-single-hexagon { margin-bottom:40px; }
+		
+		/** Event **/
+		.dt-sc-content-with-hexagon-shape { height:auto; padding-top:50px; padding-bottom:50px; width:100%; margin:0; }
+		.dt-sc-content-with-hexagon-shape::before, .dt-sc-content-with-hexagon-shape::after, .dt-sc-content-with-hexagon-shape .hexagon-border::before, .dt-sc-content-with-hexagon-shape .hexagon-border::after { content:none; }
+		.dt-sc-content-with-hexagon-shape .hexagon-border { margin:0; height:100%; width:92%; top:0; }
+		.dt-sc-content-with-hexagon-shape p { z-index:0; }
+		
+	}
+	
+	
+	/* Common Styles for the devices below 479px width */
+    @media only screen and (max-width: 479px) {
+		
+	/** Event **/
+	.dt-sc-content-with-hexagon-shape { padding-left:30px; padding-right:30px; }
+	.dt-sc-content-with-hexagon-shape .hexagon-border { width:82%; }
+	.dt-sc-single-hexagon.hexagon-left-margin, .dt-sc-single-hexagon { margin-left:17%; }
+	
+	}
+	
+	
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (min-width: 320px) and (max-width: 479px) {
+		/** Event **/
+		.dt-sc-content-with-hexagon-shape .hexagon-border { width:87%; }
+		
+		/** Event Shortcodes **/
+		.dt-sc-hexagons li:first-child, .dt-sc-hexagons li:nth-child(2), .dt-sc-hexagons li:nth-child(3), .dt-sc-hexagons li:nth-child(4), .dt-sc-hexagons li:nth-child(5), .dt-sc-hexagons li:last-child { left:19%; }
+		.dt-sc-hexagon-image-overlay h3 { font-size:15px; }
+		.dt-sc-hexagon-image-overlay h2 { font-size:18px; }
+		.dt-sc-hexagon-image-overlay h2::before { height:31px; }
+		.dt-sc-hexagon-image-overlay { height:103px; }
+		
+	}
+	
+	
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 319px) {
+				
+		/*** Event Shortcodes ***/
+		.dt-sc-hexagon-image-overlay { height:91px; }
+		.dt-sc-hexagon-image-overlay h3 { font-size:12px; }
+		.dt-sc-hexagon-image-overlay h2::before { height:29px; }
+		.dt-sc-hexagon-image-overlay h2 { font-size:14px; }
+		
+		.dt-sc-hexagon-image { padding-bottom: 115.3%; width: 100%; }
+		.dt-sc-hexagons li:first-child, .dt-sc-hexagons li:nth-child(2), .dt-sc-hexagons li:nth-child(3), .dt-sc-hexagons li:nth-child(4), .dt-sc-hexagons li:nth-child(5), .dt-sc-hexagons li:last-child { left:5%; }
+		
+		.dt-sc-single-hexagon.hexagon-left-margin, .dt-sc-single-hexagon { margin-left:5%; }
+	} 

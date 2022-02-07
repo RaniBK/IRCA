@@ -1,0 +1,64 @@
+@charset "utf-8";
+/* Table of Content
+==================================================
+	1.0 - Transition
+	2.0 - Available Domains
+	3.0 - Default Color
+	4.0 - Responsive
+	5.0 - Skin Colors */
+	
+	/*--------------------------------------------------------------
+	1.0 - Transition
+	--------------------------------------------------------------*/
+
+	.available-domains li .dt-sc-button { -webkit-transition:all 0.3s linear; -moz-transition:all 0.3s linear; -o-transition:all 0.3s linear; -ms-transition:all 0.3s linear; transition:all 0.3s linear; }
+
+
+	/*--------------------------------------------------------------
+	2.0 - Available Domains
+	--------------------------------------------------------------*/
+   
+    .available-domains { clear:both; float:left; margin: 0; padding: 0; width:100%; }
+    .available-domains li { border:1px solid; display:inline; float:left; margin:70px 2% 0 0; position: relative; text-align:center; width:23.5%; border-radius:3px;  }
+    .available-domains li, .available-domains li:last-child { padding: 0 20px 70px; }
+    .available-domains li:nth-child(4n) { margin-right: 0; }
+   
+    .available-domains li .tdl { font-size:16px; width:100%; height:60px; line-height:60px; display:inline-block; top:-30px; text-align:center; position:relative; z-index:1; }
+    .available-domains li .tdl:before { content:""; position:absolute; left:0px; right:0px; margin:auto; width:60px; height:60px; border-radius:10px; -webkit-transform:rotate(45deg); -moz-transform:rotate(45deg); -ms-transform:rotate(45deg);  transform:rotate(45deg); z-index:-1; }
+   
+    .available-domains li .pe-icon { font-size:24px; }
+    .available-domains li p { font-size:14px; margin:5px 0px 10px; display:inline-block; width:100%; }
+    .available-domains li .price { font-size:18px; width:100%; display:inline-block; }
+    .available-domains li .dt-sc-button { clear:both; display:inline-block; font-size:14px; font-weight:300; letter-spacing:0.5px;  margin: 0; padding:20px 10px; position: absolute; bottom: 0; left: 0; right: 0; width:100%; border-radius: 0 0 3px 3px;  }
+   
+    .available-domains li.not-available .pe-icon { color:#ff6666; }
+    .available-domains li.not-available .tdl:before, .available-domains li.not-available:hover .dt-sc-button { background:#ff6666; }
+    .available-domains li.not-available .dt-sc-button { cursor:text; }
+	
+	
+	
+	/*--------------------------------------------------------------
+	3.0 - Default Color
+	--------------------------------------------------------------*/
+	
+	.available-domains li .tdl, .available-domains li:hover .dt-sc-button, .available-domains li.not-available:hover .dt-sc-button { color:#ffffff; }
+	.available-domains li .price, .available-domains li a.dt-sc-button, .available-domains li.not-available .dt-sc-button { color:#000000; }
+	.available-domains li p { color:rgba(0, 0, 0, 0.3); }
+	.available-domains li { background:rgba(0, 0, 0, 0.03); }
+	.available-domains li .dt-sc-button { background:#ffffff; }	
+	.available-domains li { border-color:rgba(0, 0, 0, 0.08); }
+	
+	
+	
+	/*--------------------------------------------------------------
+	4.0 - Responsive
+	--------------------------------------------------------------*/
+	
+	/*----*****---- << Mobile (Landscape) >> ----*****----*/	
+	
+	/* Common Styles for the devices below 767px width */
+	@media only screen and (max-width: 767px) {
+	
+	.available-domains li { margin-right: 0; width: 100%; }
+	
+	} 
