@@ -68,6 +68,29 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	  height: 100%;
 	  border: none;
 	}
+	/* Add a media query if you want to adjust the layout on smaller screens */
+	@media screen and (max-width: 768px) {
+			.portfolio-items article {
+				flex: 0 0 100%;
+				/* Set to 100% width on smaller screens */
+			}
+		}
+		.portfolio-items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .portfolio-items article {
+        width: 46%; /* Adjust the width as needed */
+        margin-bottom: 2%; /* Adjust the margin as needed */
+    }
+
+    @media (max-width: 768px) {
+        .portfolio-items article {
+            width: 100%;
+        }
+    }
 	</style>
 	</head>
 <body>
@@ -165,6 +188,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<!--<li><a href="blog.html">Blog</a></li> -->
 						<li><a href="https://kelsa.io/1136/public_forms/7084" target="_blank">Careers</a></li>
 						<li><a href="contact.html">Contact</a></li>
+						<li><a href="assets/CMS_brochure_2024.pdf" target="_blank">Download Brochure</a></li>
 						<li class="highlight"><a href="https://kelsa.io/1134/public_forms/7074" target="_blank">Get In Touch</a></li>
 					</ul>
 				</div>
@@ -207,7 +231,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<h2 class="wow none" data-wow-duration="1.0s" data-wow-delay="0.1s">You think it. We create it. </h2>
 						<h1 class="wow fadeInUp" data-wow-duration="1.0s" data-wow-delay="0.6s"><span class="accentcolor">IRCA Pvt Ltd</span></h1>
 						<a href="https://kelsa.io/1134/public_forms/7074" target="_blank" class="btn btn-ghost wow none"> Free Quote </a>
-						<a href="about.html" class="btn btn-primary wow none"> Learn More </a>
+						<a href="assets/CMS_brochure_2024.pdf" target="_blank" class="btn btn-primary wow none"> Learn More </a>
 					</div>
 				</div>
 			</div>
@@ -224,7 +248,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<h2 class="secondary wow fadeInUp" data-wow-duration="1.0s" data-wow-delay="0.6s">Over <span class="accentcolor">700</span><br/>
 						Happy Clients</h2>
 						<a href="https://kelsa.io/1134/public_forms/7074" target="_blank" class="btn btn-ghost wow none"> Free Quote </a>
-						<a href="about.html" class="btn btn-primary wow none"> Learn More </a>
+						<a href="assets/CMS_brochure_2024.pdf" target="_blank" class="btn btn-primary wow none"> Learn More </a>
 					</div>
 				</div>
 			</div>
@@ -241,7 +265,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<h2 class="secondary wow fadeInUp" data-wow-duration="1.0s" data-wow-delay="0.6s"><span class="accentcolor">Successful</span><br/>
 						Delivery</h2>
 						<a href="https://kelsa.io/1134/public_forms/7074" target="_blank" class="btn btn-ghost wow none"> Free Quote </a>
-						<a href="about.html" class="btn btn-primary wow none"> Learn More </a>
+						<a href="assets/CMS_brochure_2024.pdf"  target="_blank" class="btn btn-primary wow none"> Learn More </a>
 					</div>
 				</div>
 			</div>
@@ -258,15 +282,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="container">
 	<div class="the-headline text-center">
 		<h2>About <span class="accentcolor">Us</span></h2>
-		<h3 style="font-size:16px;">IRCA is the industry leader of integrated software product development, IT services and digital marketing.</h3>
+		<h3 style="font-size:16px;">EVER SINCE 2005, WE ARE THE MOST AWARDED COMPANY.</h3>
 	</div>
 	<div class="col-md-12">
 		<div class="textwidget text-center">
 			<p>
-				We are rapidly growing Software Product Development Company and are committed to create long-term values for our clients by identifying both risks and opportunities in the marketplace. We are an IT consulting, software development & services and Digital Marketing service providers headquartered in Bangalore, India with operations in Middle East and other places. Technology, vision and execution are the touchstones of our philosophy and what we stand by in our most challenging endeavors. This, coupled with our strong financial backing, allows us to deliver best in the class industry products.
+				Our company develops software products, and our main office is in Bengaluru, India. Our product
+				line includes solutions for a variety of industry verticals, including human resource
+				management, sales force automation, club and hotel management, inventory management, and risk
+				assessment and mitigation.
 			</p>
 			<p>
-				We have 700+ happy clients across global over past decades. Our key strengths are our people, operational efficiency, quality engineering, core values, design-driven innovation, technology expertise, and agile mind-set. We are focused and innovative to provide the best software product development outputs, web design, web development, mobile application development, IT consulting services, marketing services, custom products and cloud operations. Our array of products span different industry verticals such as hospitality management, club management, inventory management, sales force automation, human resource management and risk analysis and mitigation.
+				If you're searching for a technology solutions partner with a wealth of knowledge and skill in
+				executing diverse projects, IRCA is a good choice. Our product portfolio and clientele serve as
+				evidence of this. Our philosophy and the principles we uphold in our most difficult endeavors
+				are technology, vision, and execution. This, along with our solid financial foundation, enables
+				us to provide industry-leading products.
+			</p>
+
+			<p>
+				<a class="btn icon whiteicon btn-primary rightmargin" target="_blank" href="assets/CMS_brochure_2024.pdf">View Brochure<i class=""></i></a>
 			</p>
 		</div>
 	</div>
@@ -286,14 +321,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<li><a href="#" data-cat="*" class="active">All</a></li>
 			<li><a href="#" data-cat=".7">CMS</a></li>
 			<li><a href="#" data-cat=".2">Kelsa</a></li>
-			<li><a href="#" data-cat=".11">BMS</a></li>
+			<!-- <li><a href="#" data-cat=".11">BMS</a></li>
 			<li><a href="#" data-cat=".9">IMS</a></li>
 			<li><a href="#" data-cat=".10">SFA</a></li>
 			<li><a href="#" data-cat=".8">HRCubes</a></li>
 			<li><a href="#" data-cat=".12">PRE</a></li>
 			<li><a href="#" data-cat=".13">MMT</a></li>
 			<li><a href="#" data-cat=".14">RAS</a></li>
-			<li><a href="#" data-cat=".15">GCMS</a></li>
+			<li><a href="#" data-cat=".15">GCMS</a></li> -->
 		</ul>
 	</div>
 </div>
@@ -320,7 +355,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		</div>
 		</a>
 	</article>
-	<article class="11">
+	<!-- <article class="11">
 		<a href="billing-management-system.html" class="portfolio-link">
 		<img title="IRCA BMS application screen" src="assets/img/projects/bms/bms-470x294.png" class="background-image" alt="Billing Management System screen"/>
 		<div class="overlay">
@@ -407,7 +442,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			Golf Club Management Software </span>
 		</div>
 		</a>
-	</article>
+	</article> -->
 	<!--<article class="10 / 8">
 		<a href="portfolio-single.html" class="portfolio-link">
 		<img src="../../../s3.amazonaws.com/caymandemo/wp-content/uploads/sites/16/2015/09/05153428/7-470x294.jpg" class="background-image" alt="Lovely Home"/>
