@@ -50,48 +50,65 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto%3A300italic%2C400italic%2C700italic%2C300%2C400%2C700%2C800%2C900%7CShadows+Into+Light&amp;ver=4.5.3' type='text/css' media='all'/>
 <link rel="icon" type="image/png" href="assets/img/favicon.png" sizes="16x16">
 
+
 <style>
 	.container1 {
-	  position: relative;
-	  width: 100%;
-	  overflow: hidden;
-	  padding-top: 50%; /* 16:9 Aspect Ratio */
+		position: relative;
+		width: 100%;
+		overflow: hidden;
+		padding-top: 50%;
+		/* 16:9 Aspect Ratio */
 	}
-	
+
 	.responsive-iframe {
-	  position: absolute;
-	  top: 0;
-	  left: 0;
-	  bottom: 0;
-	  right: 0;
-	  width: 100%;
-	  height: 100%;
-	  border: none;
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
+		border: none;
 	}
-	/* Add a media query if you want to adjust the layout on smaller screens */
-	@media screen and (max-width: 768px) {
-			.portfolio-items article {
-				flex: 0 0 100%;
-				/* Set to 100% width on smaller screens */
-			}
+
+	.portfolio-items {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.portfolio-items article {
+		width: 30%;
+		/* Adjust the width as needed */
+		margin-bottom: 2%;
+	}
+
+	.portfolio-items article.cms,
+	.portfolio-items article.kelsa,
+	.portfolio-items article.clublekka {
+		padding-left: 20px;
+		/* Adjust the padding as needed */
+	}
+
+	@media (max-width: 768px) {
+		.portfolio-items article {
+			width: 100%;
 		}
-		.portfolio-items {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
+	}
 
-    .portfolio-items article {
-        width: 46%; /* Adjust the width as needed */
-        margin-bottom: 2%; /* Adjust the margin as needed */
-    }
-
-    @media (max-width: 768px) {
-        .portfolio-items article {
-            width: 100%;
-        }
-    }
-	</style>
+	/* Add this CSS for responsive images */
+	.background-image {
+		display: block;
+		max-width: 100%;
+		height: auto;
+		margin: 0 auto;
+		/* Center the image horizontally */
+	}
+	.highlight a {
+color: #fff; /* Adjust the color to be visible on your background */
+font-weight: bold; /* Add bold styling for emphasis */
+}
+</style>
 	</head>
 <body>
 	
@@ -174,6 +191,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<ul role="menu" class="sub-menu">
 							<li><a href="club-management-system.html">CMS</a></li>
 							<li><a href="Workflow-management-system.html">Kelsa</a></li>
+							<li><a href="clublekka.html">Clublekka</a></li>
 						<!--	<li><a href="billing-management-system.html">BMS</a></li>
 							<li><a href="incident-management-system.html">IMS</a></li>
 							<li><a href="sales-flow-automation.html">SFA</a></li>
@@ -321,6 +339,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<li><a href="#" data-cat="*" class="active">All</a></li>
 			<li><a href="#" data-cat=".7">CMS</a></li>
 			<li><a href="#" data-cat=".2">Kelsa</a></li>
+			<li><a href="#" data-cat=".3">Clublekka</a></li>
 			<!-- <li><a href="#" data-cat=".11">BMS</a></li>
 			<li><a href="#" data-cat=".9">IMS</a></li>
 			<li><a href="#" data-cat=".10">SFA</a></li>
@@ -346,13 +365,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	</article>
 		<article class="2">
 		<a href="kelsa/" class="portfolio-link">
-		<img title="IRCA CMS application screen" src="assets/img/projects/kelsa1.png" class="background-image" alt="Club Management System screen"/>
+		<img title="IRCA CMS application screen" src="assets/img/projects/kelsa2.png" class="background-image" alt="Club Management System screen"/>
 		<div class="overlay">
 			<i class="fa fa-link"></i>
 			<h3>Kelsa</h3>
 			<span>
 			Workflow Management System </span>
 		</div>
+		</a>
+	</article>
+	<article class="3">
+		<a href="clublekka.html" class="portfolio-link">
+			<img title="Clublekka application screen" src="assets/img/projects/irca-banner (2).png"
+				class="background-image" alt="Clublekka System screen" style="width: 350px; height: 290px;" />
+			<div class="overlay">
+				<i class="fa fa-link"></i>
+				<h3>Clublekka</h3>
+				<span>Clublekka</span>
+			</div>
 		</a>
 	</article>
 	<!-- <article class="11">
@@ -587,7 +617,65 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 </section>
 <!-- =========================== SERVICES END =========================== -->
+<!-- =========================== Our Clients =========================== -->
+<section class="margin-bottom50">
+	<div class="container">
 
+		<div class="the-headline text-center">
+			<h2><span class="accentcolor">Our</span> Clients</h2>
+			<div class="decoration">
+				<div class="decoration-inside"></div>
+			</div>
+		</div>
+		<!-- Owl Carousel CSS -->
+		<link rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+		<link rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+		<!-- Your existing HTML code -->
+		<div class="container">
+			<div id="carouselExample" class="owl-carousel">
+				<div class="item">
+					<img src="assets/img/Logos/bayclub.png" class="d-block w-100" alt="...">
+				</div>
+				<div class="item">
+					<img src="assets/img/Logos/bci.png" class="d-block w-100" alt="...">
+				</div>
+				<div class="item">
+					<img src="assets/img/Logos/bel.png" class="d-block w-100" alt="...">
+				</div>
+				<div class="item">
+					<img src="assets/img/Logos/btc.png" class="d-block w-100" alt="...">
+				</div>
+				<div class="item">
+					<img src="assets/img/Logos/cycle.jpg" class="d-block w-100" alt="...">
+				</div>
+				<div class="item">
+					<img src="assets/img/Logos/gch.png" class="d-block w-100" alt="...">
+				</div>
+				<div class="item">
+					<img src="assets/img/Logos/imglogo.png" class="d-block w-100" alt="...">
+				</div>
+				<div class="item">
+					<img src="assets/img/Logos/jhc.png" class="d-block w-100" alt="...">
+				</div>
+				<div class="item">
+					<img src="assets/img/Logos/khar.png" class="d-block w-100" alt="...">
+				</div>
+				<div class="item">
+					<img src="assets/img/Logos/logo.png" class="d-block w-100" alt="...">
+				</div>
+				<div class="item">
+					<img src="assets/img/Logos/mysore-club.jpeg" class="d-block w-100" alt="...">
+				</div>
+				<div class="item">
+					<img src="assets/img/Logos/poona.jpeg" class="d-block w-100" alt="...">
+				</div>
+				<!-- Add more items with your images -->
+			</div>
+		</div>
+</section>
 
 <!-- =========================== COUNTER BEGIN =========================== -->
 <section class="darkarea margin-bottom50 padding110" style="background-size:cover;background-image: url(assets/img/counter.jpg); background-position: center center; background-repeat: no-repeat;">
@@ -804,6 +892,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								<li>
 								<a href="Workflow-management-system.html" rel="nofollow">Kelsa</a>
 								</li>
+								<li>
+									<a href="clublekka.html">Clublekka</a>
+								</li>
 							</ul>
 						</div>
 					</div>
@@ -817,7 +908,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 									Contact Info: +91 9845890316
 								</p>
 								<p>
-									Monday to Saturday - Friday: 9am to 6pm<br/>
+									Monday to Saturday: 9am to 6pm<br/>
 								</p>
 							</div>
 						</div>
@@ -900,9 +991,37 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script type='text/javascript' src='assets/js/flexslider.js'></script>
 <script type='text/javascript' src='assets/js/join.js'></script>
 <script type='text/javascript' src='assets/js/countto.js'></script>
-
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <!-- =========================== SCRIPTS END  =========================== -->
-
+<script>
+	$(document).ready(function () {
+		$("#carouselExample").owlCarousel({
+			items: 8,  // Display 8 items at a time
+			loop: true,
+			margin: 10,
+			autoplay: true,
+			autoplayTimeout: 2000,
+			responsive: {
+				0: {
+					items: 2  // Display 2 items on small screens
+				},
+				768: {
+					items: 2  // Display 2 items on medium screens
+				},
+				992: {
+					items: 8  // Display 8 items on large screens
+				}
+			}
+		});
+	});
+</script>
 
 </body>
 </html>
